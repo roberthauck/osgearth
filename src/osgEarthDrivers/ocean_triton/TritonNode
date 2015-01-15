@@ -24,6 +24,11 @@
 #include <osgEarth/MapNode>
 #include <osg/Drawable>
 
+namespace Triton {
+	class Environment;
+	class Ocean;
+}
+
 namespace osgEarth { namespace Drivers { namespace Triton
 {
     class TritonContext;
@@ -50,6 +55,9 @@ namespace osgEarth { namespace Drivers { namespace Triton
         osg::BoundingSphere computeBound() const;
 
         void traverse(osg::NodeVisitor&);
+        
+        ::Triton::Environment* getEnvironment();
+		::Triton::Ocean* getOcean();
 
     protected:
         virtual ~TritonNode();
