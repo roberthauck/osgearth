@@ -172,3 +172,8 @@ SilverLiningNode::traverse(osg::NodeVisitor& nv)
         _geode->accept(nv);
     }
 }
+
+::SilverLining::Atmosphere* SilverLiningNode::getAtmosphere()
+{
+    return _SL->getAtmosphere();
+}
