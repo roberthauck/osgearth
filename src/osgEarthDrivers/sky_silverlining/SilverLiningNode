@@ -23,6 +23,10 @@
 #include <osgEarth/PhongLightingEffect>
 #include <osg/Light>
 
+namespace SilverLining {
+	class Atmosphere;
+}
+
 namespace osgEarth { namespace Drivers { namespace SilverLining
 {
     class SilverLiningContext;
@@ -53,6 +57,9 @@ namespace osgEarth { namespace Drivers { namespace SilverLining
     public: // osg::Node
 
         void traverse(osg::NodeVisitor&);
+        
+    public: // SilverLining
+        ::SilverLining::Atmosphere* getAtmosphere();
 
     protected:
         virtual ~SilverLiningNode();
