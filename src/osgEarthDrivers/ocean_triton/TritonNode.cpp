@@ -75,6 +75,16 @@ TritonNode::computeBound() const
     return osg::BoundingSphere();
 }
 
+::Triton::Environment* TritonNode::getEnvironment()
+{
+    return _TRITON->getEnvironment();
+}
+
+::Triton::Ocean* TritonNode::getOcean()
+{
+    return _TRITON->getOcean();
+}
+
 void
 TritonNode::traverse(osg::NodeVisitor& nv)
 {
