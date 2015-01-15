@@ -27,6 +27,6 @@ SETUP_PLUGIN(osgearth_sky_silverlining)
 
 # to install public driver includes:
 SET(LIB_NAME sky_silverlining)
-SET(LIB_PUBLIC_HEADERS SilverLiningOptions)
+SET(LIB_PUBLIC_HEADERS SilverLiningOptions SilverLiningNode)
 
 INCLUDE(ModuleInstallOsgEarthDriverIncludes OPTIONAL)
