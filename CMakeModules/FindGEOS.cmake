@@ -6,8 +6,6 @@
 # GEOS_INCLUDE_DIR, where to find the headers
 
 FIND_PATH(GEOS_INCLUDE_DIR geos/geom/Geometry.h
-  $ENV{GEOS_DIR}
-  NO_DEFAULT_PATH
     PATH_SUFFIXES include
 )
 
